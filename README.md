@@ -3,6 +3,7 @@
 # descripción
  interfaz gráfica que permite listar, crear, actualizar y eliminar datos de medidores y de clientes.
  Un cliente puede tener de 1 hasta 3 medidores asignados.
+ herramientas React.js(typescript, sass, zustand, axios), express(typeScript),
 
 ## Configuración del client (React)
 
