@@ -58,7 +58,7 @@ const updateClients = async (req: any, res: any) => {
 const deleteClients = async (req: any, res: any) => {
     try {
         const { rut } = req.params;
-        console.log(rut,'controller')
+    
         const result = await clients.deleteClients(rut);
         res.status(200).json({
             ...result

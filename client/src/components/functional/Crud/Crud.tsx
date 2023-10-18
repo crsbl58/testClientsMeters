@@ -101,7 +101,6 @@ const Crud = () => {
   });
 
   const changeInputs = (e: any, type: string) => {
-    console.log(type, e.currentTarget.name);
 
     switch (type) {
       case "clients":
@@ -194,7 +193,6 @@ const Crud = () => {
   const onClickTableMeters = (list: any, index: number) => {
     switch (menu.meters.currentSelection) {
       case 1:
-        console.log("wwww");
         setStateListMeters({
           ...statelistMeters,
           currentSelection: index,
@@ -403,7 +401,6 @@ const Crud = () => {
 
         break;
       case "meters":
-        console.log("config ddd");
         setStateFormMeters({
           ...stateFormMeters,
           codeMeters: {
@@ -434,7 +431,6 @@ const Crud = () => {
   }, []);
 
   useEffect(() => {
-    console.log(listClients);
     setStateListClients({
       ...statelistClients,
       arrayData: listClients.map((list: any) => [
@@ -589,7 +585,7 @@ const Crud = () => {
 
           break;
         case 1:
-          console.log("111");
+
           setStateListMeters({
             ...statelistMeters,
             currentSelection: null,
@@ -787,7 +783,7 @@ const Crud = () => {
         <MenuButtons
           menu={menu.meters}
           onClick={(index: number) => {
-            console.log(index, "menuu");
+   
             if (statelistClients.currentSelection != null) {
               setmenu({
                 ...menu,

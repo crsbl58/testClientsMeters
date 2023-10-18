@@ -71,7 +71,7 @@ const updateClients: any = async (
 
 const deleteClients: any = async (rut: string) => {
     try {
-        console.log('deleteeeeee', rut)
+   
         const deleteClient = await db.query(_deleteClients(rut));
 
         const deleteMeters = await db.query(_deleteAllMeters(rut));

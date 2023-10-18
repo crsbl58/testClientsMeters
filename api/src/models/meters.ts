@@ -28,11 +28,6 @@ const insertMeters: any = async (
     rutClient: string
 ) => {
     try {
-        console.log(
-            code,
-            name,
-            description,
-            rutClient)
 
         const insert = await db.query(_insertMeters(
             code,
