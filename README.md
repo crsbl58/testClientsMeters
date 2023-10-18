@@ -8,14 +8,14 @@
 
 1. **Instalación de Dependencias:**
   
-   cd frontend
-   yarn
+   cd frontend,
+   yarn,
    yarn start
 
    ## Configuración de la api (node, express)
 
 1. **Instalación de Dependencias:**
 
-   cd api
-   yarn
+   cd api,
+   yarn,
    yarn dev
