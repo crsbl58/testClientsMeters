@@ -15,6 +15,7 @@
    ## Configuración de la api (node, express)
 
 1. **Instalación de Dependencias:**
+
    cd api
    yarn
    yarn dev
