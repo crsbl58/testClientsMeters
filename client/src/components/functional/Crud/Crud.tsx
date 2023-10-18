@@ -101,7 +101,6 @@ const Crud = () => {
   });
 
   const changeInputs = (e: any, type: string) => {
-
     switch (type) {
       case "clients":
         setStateFormClients({
@@ -585,7 +584,6 @@ const Crud = () => {
 
           break;
         case 1:
-
           setStateListMeters({
             ...statelistMeters,
             currentSelection: null,
@@ -636,18 +634,20 @@ const Crud = () => {
     ) {
       switch (menu.meters.currentSelection) {
         case 0:
-          if (
-            statelistMeters.arrayData.filter(
-              (list: any) => list[0] === stateFormMeters.codeMeters.text
-            ).length === 0
-          ) {
-            setStateFormMeters({
-              ...stateFormMeters,
-              buttonMeters: {
-                ...stateFormMeters.buttonMeters,
-                disabled: false,
-              },
-            });
+          if (statelistMeters.arrayData.length < 3) {
+            if (
+              statelistMeters.arrayData.filter(
+                (list: any) => list[0] === stateFormMeters.codeMeters.text
+              ).length === 0
+            ) {
+              setStateFormMeters({
+                ...stateFormMeters,
+                buttonMeters: {
+                  ...stateFormMeters.buttonMeters,
+                  disabled: false,
+                },
+              });
+            }
           }
 
           break;
@@ -783,7 +783,6 @@ const Crud = () => {
         <MenuButtons
           menu={menu.meters}
           onClick={(index: number) => {
-   
             if (statelistClients.currentSelection != null) {
               setmenu({
                 ...menu,
